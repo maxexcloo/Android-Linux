@@ -50,8 +50,8 @@ echo "127.0.0.1 localhost" > $MOUNT/etc/hosts
 echo "nameserver 8.8.4.4" > $MOUNT/etc/resolv.conf
 echo "nameserver 8.8.8.8" >> $MOUNT/etc/resolv.conf
 rm -rf $MOUNT/lost+found
-sysctl -w net.ipv4.ip_forward=1 > /dev/null
-sysctl -w net.ipv6.conf.all.forwarding=1 > /dev/null
+sysctl -w net.ipv4.ip_forward=1 &> /dev/null
+sysctl -w net.ipv6.conf.all.forwarding=1 &> /dev/null
 
 # Enter Linux
 chroot $MOUNT /bin/bash -c "source /etc/profile; bash"
