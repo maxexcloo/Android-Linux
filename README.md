@@ -1,4 +1,5 @@
-Notes
-=====
+**Description**  
+This repository contains a collection of scripts for installing and running Linux Distributions on Android.
 
-This repository contains a collection of scripts I've worked on for installing and running Linux Distributions on Android. Many are likely to be outdated or broken.
+**Warning**  
+This repository is unsupported and code may be outdated or broken.
